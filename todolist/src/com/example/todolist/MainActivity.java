@@ -1,5 +1,4 @@
 //TEST
-//HOW DOES THIS WORK? SO STUPID D:
 package com.example.todolist;
 
 import java.util.Locale;
@@ -56,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		//getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
@@ -65,10 +64,6 @@ public class MainActivity extends ActionBarActivity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
 		return super.onOptionsItemSelected(item);
 	}
 
@@ -92,8 +87,8 @@ public class MainActivity extends ActionBarActivity {
 
 		@Override
 		public int getCount() {
-			// Show 3 total pages.
-			return 3;
+			// Only Two Pages
+			return 2;
 		}
 
 		@Override
@@ -104,8 +99,6 @@ public class MainActivity extends ActionBarActivity {
 				return getString(R.string.title_section1).toUpperCase(l);
 			case 1:
 				return getString(R.string.title_section2).toUpperCase(l);
-			case 2:
-				return getString(R.string.title_section3).toUpperCase(l);
 			}
 			return null;
 		}
