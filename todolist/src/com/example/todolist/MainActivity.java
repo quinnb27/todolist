@@ -116,48 +116,4 @@ public class MainActivity extends ActionBarActivity {
 		}
 	}
 
-	public static class PuppyPage extends Fragment {
-
-		/**
-		 * Returns a new instance of this fragment.
-		 */
-		public static PuppyPage newInstance() {
-			PuppyPage fragment = new PuppyPage();
-			return fragment;
-		}
-
-		public PuppyPage() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			
-			View rootView = inflater.inflate(R.layout.puppy_page, container, false);
-			
-			return rootView;
-		}
-	}
-	
-	public static class ListPage extends Fragment {
-
-		/**
-		 * Returns a new instance of this fragment.
-		 */
-		public static ListPage newInstance() {
-			ListPage fragment = new ListPage();
-			return fragment;
-		}
-
-		public ListPage() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			
-			View rootView = inflater.inflate(R.layout.list_page, container, false);
-			
-			return rootView;
-		}
-	}
-
 }
